@@ -1,0 +1,36 @@
+# Secrets and local configuration
+.env
+.env.*
+*.env
+!.env.example
+*.key
+*.pem
+id_rsa*
+id_ed25519*
+secrets/
+private/
+
+# Minecraft data and backups
+world/
+world_nether/
+world_the_end/
+minecraft/
+minecraft-backups/
+minecraft-backup-queue/
+*.tar
+*.tar.gz
+*.zip
+*.jar
+*.log
+logs/
+crash-reports/
+plugins/
+
+# Local machine / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.tmp
+*.part
