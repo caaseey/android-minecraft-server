@@ -1,4 +1,4 @@
-# Scripts
+﻿# Scripts
 
 Operational scripts are intentionally not included in this initial bundle.
 
