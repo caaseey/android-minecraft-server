@@ -1,6 +1,6 @@
 # Backup workflow
 
-## Current legacy workflow
+## Historical legacy workflow
 
 The existing `backup-minecraft.sh` script is scheduled by cron for 03:00 daily. It:
 
@@ -12,6 +12,10 @@ The existing `backup-minecraft.sh` script is scheduled by cron for 03:00 daily. 
 6. Runs a Windows cleanup script and retains recent local copies.
 
 The script has an `EXIT` trap intended to send `save-on` if it exits after disabling automatic saving. This behavior should still be reviewed and monitored in real use.
+
+## Public example script
+
+The public `scripts/backup-minecraft.sh` is a sanitized adaptation of the legacy workflow. It verifies the local TAR and compares SHA-256 after SCP, but it does not run the private Windows cleanup script or manage remote retention. It also cannot confirm that Paper acknowledged its console commands. Review the script and test restoration before relying on it.
 
 ## Verification performed
 

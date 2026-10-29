@@ -52,15 +52,23 @@ Review every file for secrets before publishing scripts.
 android-minecraft-server/
 ├── README.md
 ├── .gitignore
+├── config/
+│   ├── server.env.example
+│   ├── duckdns.env.example
+│   └── backup.env.example
 ├── docs/
 │   ├── architecture.md
 │   ├── backups.md
 │   └── troubleshooting.md
 └── scripts/
+    ├── start-services.sh
+    ├── check-paper.sh
+    ├── update-duckdns.sh
+    ├── backup-minecraft.sh
     └── README.md
 ```
 
-Operational scripts are intentionally not included in this initial documentation bundle. Review and sanitize them before committing.
+The example scripts are public-facing adaptations, not production-ready defaults. Review `scripts/README.md` before use. Real credentials and machine-specific configuration remain local.
 
 ## Documentation
 

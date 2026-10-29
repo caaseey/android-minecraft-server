@@ -34,3 +34,7 @@ Thumbs.db
 *.swp
 *.tmp
 *.part
+
+# Keep private operational config local while allowing the published examples
+config/*.env
+!config/*.env.example
